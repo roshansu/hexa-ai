@@ -25,7 +25,7 @@ export default function Register() {
     setHide("success");
 
     try {
-      const res = await fetch("http://localhost:5000/user/register", {
+      const res = await fetch("https://hexa-ai-six.vercel.app/user/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ fullName, emailId, password }),

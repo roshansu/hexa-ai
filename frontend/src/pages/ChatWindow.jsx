@@ -29,7 +29,7 @@ const ChatWindow = () => {
     const [chatId, setChatId] = useState('')
 
     async function fetchHistory() {
-        const res = await fetch(`http://localhost:5000/chat/history/${id}`,{
+        const res = await fetch(`https://hexa-ai-six.vercel.app/chat/history/${id}`,{
             credentials:"include"
         })
         const data = await res.json();
@@ -75,7 +75,7 @@ const ChatWindow = () => {
         setHideDeepSeek(false)
         setHideOpenAi(false)
         setHideGemini(false)
-        const res = await fetch(`http://localhost:5000/chat/conversation/${id}`,{
+        const res = await fetch(`https://hexa-ai-six.vercel.app/chat/conversation/${id}`,{
             credentials:"include"
         })
         const result = await res.json();
@@ -99,7 +99,7 @@ const ChatWindow = () => {
         setLoading(true);
         setCommand('')
 
-        const res = await fetch("http://localhost:5000/chat/get", {
+        const res = await fetch("https://hexa-ai-six.vercel.app/chat/get", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
