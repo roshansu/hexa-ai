@@ -13,6 +13,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     origin: ["http://localhost:5173", "https://hexaai-wheat.vercel.app"],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', "PATCH"], 
     credentials: true
 }))
 
