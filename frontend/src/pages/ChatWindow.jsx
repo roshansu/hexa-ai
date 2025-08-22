@@ -3,10 +3,8 @@ import { useState, useEffect, useRef } from "react"
 import { useNavigate } from "react-router-dom"
 import History from "../component/History"
 import { Link } from "react-router-dom"
-import dotenv from 'dotenv'
 import '../scroll.css'
 import Chat from "../component/Chat"
-import dummy from "../dummyData"
 import InputBox from "../component/InputBox"
 import openai from '../assets/openai.svg'
 import gemini from '../assets/gemini.svg'
