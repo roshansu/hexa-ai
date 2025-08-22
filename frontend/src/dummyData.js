@@ -203,13 +203,6 @@ export const conversations = [
 ];
 
 
-// OpenAi
-// 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
 
-// DeepSeek
-// sk-0ce5ffe04b064b13924c94fdc15ba044
-
-// Gemini
-// AIzaSyCFogyf5kmLcj_Ibgs4xk5ShCa_EgpsdYg
 
 export default dummy
